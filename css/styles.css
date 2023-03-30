@@ -14,8 +14,10 @@
 * {
   margin: 0;
 }
-ul {
+ul,
+li {
   list-style: none;
+  padding-left: 0;
 }
 a {
   text-decoration: none;
@@ -27,6 +29,19 @@ body {
   color: var(--color-text-primary);
   font-family: var(--font-family-primary);
 }
+.section {
+  padding: 94px 0;
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  margin-left: 215px;
+}
+.link-navigation {
+  display: flex;
+  align-items: center;
+}
 .background-dark {
   background-color: var(--background-color-primary-dark);
 }
@@ -36,12 +51,17 @@ body {
 .background-our-team {
   background-color: var(--background-color-primary-light);
 }
-.logo {
+.logo,
+.logo-footer {
   font-family: var(--font-family-secondary);
   color: var(--color-logo);
   font-size: 26px;
   line-height: 1.19;
 }
+.logo {
+  padding: 24px 93px 25px 0;
+}
+
 .logo-span-dark {
   color: var(--color-logo-dark);
 }
@@ -54,6 +74,15 @@ body {
 }
 .contact-details {
   color: var(--color-text-secondary);
+}
+.navigation-list {
+  column-gap: 46px;
+}
+.navigation-last {
+  padding-right: 371px;
+}
+.contact-list {
+  column-gap: 50px;
 }
 .navigation:hover,
 .navigation:focus,
@@ -68,6 +97,10 @@ body {
   font-size: 44px;
   line-height: 1.363;
   text-transform: uppercase;
+  width: 696px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 40px;
 }
 .order-service {
   color: var(--color-logo-light);
@@ -76,6 +109,19 @@ body {
   font-size: 16px;
   background-color: var(--color-logo);
   border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 16px 45px;
+}
+.lorem-ipsum-list,
+.what-we-do-list,
+.our-team-list {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
 }
 .heading-lorem-ipsum {
   font-weight: 700;
@@ -85,20 +131,29 @@ body {
 }
 .paragraph-lorem-ipsum {
   color: var(--color-text-secondary);
+  font-size: 14px;
   line-height: 1.5;
+  width: 270px;
 }
 .content-headers {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.666;
+  text-align: center;
+  padding-bottom: 50px;
 }
 .team,
 .workplace {
   font-size: 16px;
   line-height: 1.1875;
+  text-align: center;
 }
 .team {
   font-weight: 500;
+  padding: 30px 0 10px 0;
+}
+.workplace {
+  padding-bottom: 30px;
 }
 .page-filter {
   font-family: inherit;
@@ -124,12 +179,19 @@ body {
 .logo-span-light {
   color: var(--color-logo-light);
 }
+.footer-padding {
+  padding: 60px 0;
+}
+.footer-gap {
+  row-gap: 20;
+}
 .location,
 .contact-details-secondary {
   color: var(--color-logo-light);
   font-size: 14px;
   line-height: 1.714;
   font-style: normal;
+  padding-bottom: 9px;
 }
 .contact-details-secondary {
   color: var(--color-contact-light);
