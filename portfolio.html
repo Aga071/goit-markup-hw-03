@@ -5,28 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
+    <link rel="stylesheet" href="css/normalize-minified.css" />
     <link rel="stylesheet" href="css/styles.css" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/normalize-minified.css" />
   </head>
   <body>
     <header>
-      <div class="container">
-        <nav>
+      <div class="container link-navigation border-header">
+        <nav class="link-navigation">
           <a class="logo" href="index.html">Web<span class="logo-span-dark">Studio</span></a>
-          <ul>
+          <ul class="link-navigation navigation-list">
             <li><a class="navigation" href="index.html">Agencja</a></li>
             <li><a class="navigation" href="portfolio.html">Portfolio</a></li>
-            <li><a class="navigation" href="">Kontakt</a></li>
+            <li><a class="navigation navigation-last" href="">Kontakt</a></li>
           </ul>
         </nav>
-        <ul>
+        <ul class="link-navigation contact-list">
           <li>
             <a class="contact-details" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
@@ -37,14 +36,14 @@
     <main>
       <section class="section">
         <div class="container">
-          <ul>
+          <ul class="page-filter-list">
             <li><button class="page-filter" type="button">Wszystkie</button></li>
             <li><button class="page-filter" type="button">Strony</button></li>
             <li><button class="page-filter" type="button">Aplikacje</button></li>
             <li><button class="page-filter" type="button">Dizajn</button></li>
             <li><button class="page-filter" type="button">Marketing</button></li>
           </ul>
-          <ul>
+          <ul class="portfolio-list">
             <li>
               <img src="images/img2-1.jpg" width="370" height="294" alt="photo of website" />
               <h3 class="heading-portfolio">Technocrack</h3>
@@ -110,18 +109,18 @@
         </div>
       </section>
     </main>
-    <footer class="background-dark">
+    <footer class="background-dark footer-padding">
       <div class="container">
-        <a class="logo" href="index.html">Web<span class="logo-span-light">Studio</span></a>
+        <a class="logo-footer" href="index.html">Web<span class="logo-span-light">Studio</span></a>
         <address>
           <ul>
             <li class="location">m. Warszawa, Aleje Jerozolimskie 21</li>
-            <li>
+            <li class="location">
               <a class="contact-details-secondary" href="mailto:info@example.com"
                 >info@example.com</a
               >
             </li>
-            <li>
+            <li class="location">
               <a class="contact-details-secondary" href="tel:+48111111111">+48 111 111 111</a>
             </li>
           </ul>

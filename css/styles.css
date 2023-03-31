@@ -10,6 +10,8 @@
   --background-color-primary-light: #ffffff;
   --background-color-secondary-light: #f5f4fa;
   --background-color-primary-dark: #2f303a;
+  --border-header-color: #ececec;
+  --border-portfolio-color: #eeeeee;
 }
 * {
   margin: 0;
@@ -38,6 +40,9 @@ body {
   margin: 0 auto;
   margin-left: 215px;
 }
+.border-header {
+  border-bottom: 1px solid var(--border-header-color);
+}
 .link-navigation {
   display: flex;
   align-items: center;
@@ -50,6 +55,9 @@ body {
 }
 .background-our-team {
   background-color: var(--background-color-primary-light);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .logo,
 .logo-footer {
@@ -60,6 +68,10 @@ body {
 }
 .logo {
   padding: 24px 93px 25px 0;
+}
+.logo-footer {
+  display: inline-block;
+  padding-bottom: 20px;
 }
 
 .logo-span-dark {
@@ -118,10 +130,14 @@ body {
 }
 .lorem-ipsum-list,
 .what-we-do-list,
-.our-team-list {
+.our-team-list,
+.portfolio-list {
   display: flex;
   gap: 30px;
   justify-content: space-between;
+}
+.portfolio-list {
+  flex-wrap: wrap;
 }
 .heading-lorem-ipsum {
   font-weight: 700;
@@ -155,6 +171,12 @@ body {
 .workplace {
   padding-bottom: 30px;
 }
+.page-filter-list {
+  display: flex;
+  justify-content: center;
+  column-gap: 8px;
+  padding-bottom: 50px;
+}
 .page-filter {
   font-family: inherit;
   font-weight: 500;
@@ -162,6 +184,8 @@ body {
   line-height: 1.625;
   background-color: var(--background-color-secondary-light);
   border: none;
+  padding: 6px 20px;
+  border-radius: 4px;
 }
 .page-filter:hover,
 .page-filter:focus {
@@ -171,10 +195,17 @@ body {
 .heading-portfolio {
   font-size: 18px;
   line-height: 2;
+  padding: 20px 24px 4px 24px;
+  border-left: 1px solid var(--border-portfolio-color);
+  border-right: 1px solid var(--border-portfolio-color);
 }
 .paragraph-portfolio {
   color: var(--color-text-secondary);
   line-height: 1.875;
+  padding: 0 24px 20px 24px;
+  border-left: 1px solid var(--border-portfolio-color);
+  border-right: 1px solid var(--border-portfolio-color);
+  border-bottom: 1px solid var(--border-portfolio-color);
 }
 .logo-span-light {
   color: var(--color-logo-light);
@@ -182,8 +213,8 @@ body {
 .footer-padding {
   padding: 60px 0;
 }
-.footer-gap {
-  row-gap: 20;
+.footer-list-padding {
+  padding-top: 20;
 }
 .location,
 .contact-details-secondary {
