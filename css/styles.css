@@ -104,6 +104,7 @@ body {
   border: none;
 }
 .heading-pirmary {
+  text-transform: uppercase;
   color: var(--color-logo-light);
   font-weight: 900;
   font-size: 44px;
@@ -113,6 +114,7 @@ body {
   margin: 0 auto;
   text-align: center;
   padding-bottom: 40px;
+  letter-spacing: 0.06em;
 }
 .order-service {
   color: var(--color-logo-light);
@@ -150,6 +152,7 @@ body {
   font-size: 14px;
   line-height: 1.5;
   width: 270px;
+  letter-spacing: 0.03em;
 }
 .content-headers {
   font-weight: 700;
@@ -191,6 +194,9 @@ body {
 .page-filter:focus {
   color: var(--color-logo-light);
   background-color: var(--color-logo);
+}
+.img-portfolio {
+  display: block;
 }
 .heading-portfolio {
   font-size: 18px;
